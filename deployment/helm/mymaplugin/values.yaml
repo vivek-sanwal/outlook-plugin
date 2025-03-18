@@ -1,0 +1,12 @@
+replicaCount: 1
+dockerRegistry: bmbdevcontainers.azurecr.io
+containerPort: 4001
+servicePort: 80
+image:
+  repository: myma/plugin
+  tag:
+  pullPolicy: IfNotPresent
+log:
+  level: debug
+node:
+  environment: development 

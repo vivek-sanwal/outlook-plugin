@@ -1,0 +1,6 @@
+node_modules
+emtest*.html
+public/*_test.html
+dist
+buildprod
+.env

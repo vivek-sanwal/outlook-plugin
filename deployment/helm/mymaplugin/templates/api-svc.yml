@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: {{ .Release.Name }}-service
+spec:
+  selector:
+    app: {{ .Release.Name }}
+    tier: frontend
+  ports:
+  - name: http
+    port: {{ .Values.servicePort }}
+    targetPort: {{ .Values.containerPort }}
